@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>김성준 포트폴리오</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+    background:#f4f6fb;color:#222;line-height:1.7;
+  }
+  a{color:#4f46e5;text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  header{
+    background:linear-gradient(135deg,#4f46e5,#06b6d4);
+    color:#fff;text-align:center;padding:70px 20px 90px;
+  }
+  .avatar{
+    width:90px;height:90px;border-radius:50%;margin:0 auto 16px;
+    background:rgba(255,255,255,.2);border:3px solid rgba(255,255,255,.6);
+    display:flex;align-items:center;justify-content:center;font-size:2.4rem;
+  }
+  header h1{margin:0;font-size:2.2rem}
+  header p{margin:6px 0 22px;opacity:.9}
+  .btn{
+    display:inline-block;margin:4px;padding:9px 20px;border-radius:999px;
+    background:#fff;color:#4f46e5;font-weight:600;font-size:.95rem;
+    transition:transform .15s,box-shadow .15s;
+  }
+  .btn:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.15)}
+  .btn.outline{background:transparent;color:#fff;border:2px solid #fff}
+
+  main{max-width:760px;margin:-50px auto 0;padding:0 20px 40px}
+  .card{
+    background:#fff;border-radius:14px;padding:26px 28px;margin-bottom:22px;
+    box-shadow:0 4px 18px rgba(30,40,90,.08);
+  }
+  .card h2{margin:0 0 14px;font-size:1.25rem;display:flex;align-items:center;gap:8px}
+  .card h2::before{content:"";width:6px;height:22px;border-radius:3px;background:linear-gradient(#4f46e5,#06b6d4)}
+
+  .interests{display:flex;gap:12px;flex-wrap:wrap}
+  .interest{flex:1;min-width:200px;background:#eef2ff;border-radius:10px;padding:14px 16px}
+  .interest b{display:block}
+  .interest span{font-size:.9rem;color:#555}
+
+  .project h3{margin:0;font-size:1.2rem}
+  .project .meta{color:#777;font-size:.9rem;margin:2px 0 16px}
+  .item{margin-bottom:14px}
+  .item b{color:#4f46e5;font-size:.95rem}
+  .item p{margin:2px 0 0}
+
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{background:#ecfeff;color:#0e7490;border:1px solid #a5f3fc;padding:3px 12px;border-radius:999px;font-size:.88rem}
+
+  footer{text-align:center;color:#999;font-size:.85rem;padding:20px 0 40px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="avatar">👨‍💻</div>
+  <h1>김성준</h1>
+  <p>부산대학교 정보컴퓨터공학부 학생</p>
+  <a class="btn" href="https://github.com/Kim-SJ1" target="_blank">GitHub</a>
+  <a class="btn outline" href="resume.pdf" download>이력서 PDF</a>
+</header>
+
+<main>
+  <section class="card">
+    <h2>관심 분야</h2>
+    <div class="interests">
+      <div class="interest"><b>📱 Android 앱 개발</b><span>직접 쓸 수 있는 앱 만들어보기</span></div>
+      <div class="interest"><b>🧠 머신러닝</b><span>ML 모델을 앱에 적용해보기</span></div>
+    </div>
+  </section>
+
+  <section class="card project">
+    <h2>대표 프로젝트</h2>
+    <h3>📈 StockAI - 주식 정보 앱</h3>
+    <p class="meta">소프트웨어설계및실험 수업 텀프로젝트 · Android / Java</p>
+
+    <div class="item"><b>문제 정의</b>
+      <p>주식 시세와 관련 뉴스를 여러 곳에서 따로 찾아봐야 하는 게 불편해서, 한 앱에서 같이 볼 수 있게 만들어보고 싶었습니다.</p></div>
+    <div class="item"><b>역할</b>
+      <p>수업 과제로 진행했으며, AI 도구의 도움을 받아 개발하면서 Android 앱의 구조와 외부 API 사용법을 익혔습니다.</p></div>
+    <div class="item"><b>기술</b>
+      <div class="tags" style="margin-top:6px">
+        <span class="tag">Android (Java)</span><span class="tag">Room DB</span><span class="tag">Retrofit</span><span class="tag">TensorFlow Lite</span>
+      </div></div>
+    <div class="item"><b>결과</b>
+      <p>주식 시세 조회, 관심 종목 저장, 간단한 주가 예측 기능이 있는 앱을 완성하고 수업 시간에 발표했습니다.</p></div>
+  </section>
+
+  <section class="card">
+    <h2>기술 스택</h2>
+    <div class="tags">
+      <span class="tag">C / C++</span><span class="tag">Java</span><span class="tag">Python</span>
+      <span class="tag">Android Studio</span><span class="tag">Git</span>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 김성준</footer>
+
+</body>
+</html>
